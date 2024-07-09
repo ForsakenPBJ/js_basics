@@ -44,3 +44,80 @@ console.log(language.includes("Java"))
 
 // use string literals
 console.log(`Imagine not knowing this is ${language.includes("Java")}`)
+
+// conditionals
+let age = parseFloat(prompt("Please enter your age: "));
+
+if (age >= 19){
+    console.log("Wow, you're old!");
+}
+else if (age <= 12){
+    console.log("Hello, child.");
+}
+else{
+    console.log("Angsty teen coming by.");
+}
+
+console.log();
+
+// for loop
+let fruits = ["apple", "pinnaple", "pen", "coconut", "nut"];
+
+for (let i = 0; i < fruits.length; i++){
+    console.log(fruits[i]);
+}
+
+console.log();
+
+for (let fruit of fruits){
+    console.log(fruit);
+}
+
+console.log();
+
+// while loop
+console.log("Continue? ")
+let counter = 10;
+while (counter > 0) {
+    console.log(counter);
+    counter--;
+}
+
+console.log("You failed.")
+console.log()
+// Array (similar to Python lists)
+let numbers = [123, 456, 789, 0];
+let schools = ["RI", "ASR", "EJC", "ACJC"];
+let mixed = [1.23, "Horn", [1, 2, 3, 4]];
+
+console.log(numbers[0]);
+console.log(schools.length);
+
+schools.push("TMJC");
+mixed.push('A');
+console.log(schools);
+schools.pop();
+console.log(schools);
+
+for (let i = 0; i < schools.length; i++){
+    console.log(schools[i]);
+}
+
+// Objects (just straight up (Monty) Python shii)
+let person = {
+    firstName: "Johnny",
+    lastName: "Deer",
+    dead: true
+}
+
+console.log(person.firstName)
+
+// Functions
+function cube(x){
+    return x ** 3;
+}
+console.log(cube(5));
+
+// Arrow function
+let magnitude =  (i, j, k) => Math.sqrt(i**2 + j**2 + k**2);
+console.log(magnitude(1, 1, 1))

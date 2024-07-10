@@ -121,3 +121,24 @@ console.log(cube(5));
 // Arrow function
 let magnitude =  (i, j, k) => Math.sqrt(i**2 + j**2 + k**2);
 console.log(magnitude(1, 1, 1))
+
+// Html bs
+
+// Add alert and Prompt
+alert("Hello World");
+let name = prompt("Enter your name: ");
+alert(name);
+if (name) {
+	alert("Hello " + name + "!!!");
+	document.getElementById("greeting").textContent = "Hello " + name + "!";
+}
+else {
+	alert("Are you nameless????");
+	document.getElementById("greeting").textContent = "Hello " + "noName";
+}
+
+// Time
+let now = new Date();
+let dateStr = now.toLocateDateString();
+let timeStr = now.toLocateTimeString();      
+document.getElementById("datetime").textContent = dateStr + timeStr;
